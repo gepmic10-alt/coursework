@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  color: #333;
+  color: #333333;
 }
 
 .container {
@@ -25,7 +25,7 @@ header .container {
   align-items: center;
 }
 header .logo {
-  color: #fff;
+  color: #ffffff;
 }
 header nav ul {
   display: flex;
@@ -33,12 +33,12 @@ header nav ul {
   list-style: none;
 }
 header nav a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   transition: 0.3s ease;
 }
 header nav a:hover {
-  color: #ff4d4d;
+  color: #cce95a;
 }
 
 .hero {
@@ -54,7 +54,7 @@ header nav a:hover {
   margin-bottom: 20px;
 }
 .hero button {
-  background: #ff4d4d;
+  background: #cce95a;
   color: white;
   border: none;
   padding: 15px 30px;
