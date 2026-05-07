@@ -1,0 +1,141 @@
+$primary-color: #ff4d4d;
+$dark-color: #111;
+$text-color: #333;
+$light-color: #fff;
+$gray-color: #f4f4f4;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: $text-color;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: $dark-color;
+    padding: 20px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        color: $light-color;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        a {
+            color: $light-color;
+            text-decoration: none;
+            transition: 0.3s ease;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.hero {
+    background: $gray-color;
+    padding: 100px 0;
+    text-align: center;
+
+    h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    button {
+        background: $primary-color;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.advantages {
+    padding: 60px 0;
+
+    .container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .card {
+        background: $gray-color;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        flex: 1;
+    }
+}
+
+footer {
+    background: $dark-color;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+
+    header {
+
+        .container {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        nav {
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    .advantages {
+
+        .container {
+            flex-direction: column;
+        }
+    }
+
+    .hero {
+
+        h2 {
+            font-size: 32px;
+        }
+    }
+}

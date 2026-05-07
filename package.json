@@ -2,14 +2,33 @@
   "name": "coursework",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/gepmic10-alt/coursework#readme",
+  "bugs": {
+    "url": "https://github.com/gepmic10-alt/coursework/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gepmic10-alt/coursework.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "detect-libc": "^2.1.2",
+    "immutable": "^5.1.5",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "node-addon-api": "^7.1.1",
+    "picomatch": "^4.0.4",
+    "readdirp": "^4.1.2",
+    "source-map-js": "^1.2.1"
+  },
   "devDependencies": {
     "sass": "^1.99.0"
   }
